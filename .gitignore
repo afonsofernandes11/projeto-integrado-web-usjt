@@ -27,3 +27,7 @@ node_modules
 # JAVA
 .class
 .jar
+
+build/classes/dao
+build/classes/functions
+build/classes/model
