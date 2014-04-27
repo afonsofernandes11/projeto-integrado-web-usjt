@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" ng-app="App">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Menu Principal</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="../assets/css/bootstrap.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
+</head>
+<body>
+
+<!-- fixed navbar -->
+<div class="navbar navbar-inverse" role="navigation">
+	<!-- container -->
+	<div class="container-fluid">
+	    <!-- button mobile -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	       <a class="navbar-brand" href="#">Sistema de Aeroporto</a>
+	    </div>
+		<!-- /. button mobile -->
+		<!-- nav itens -->
+	    <div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<!-- dropdown voo -->
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Voo<b class="caret"></b></a>
+					<!-- sub dropdown voo -->
+					<ul class="dropdown-menu">
+						<li><a href="#searchFly">Consultar</a></li>
+						<li><a href="#fly/insert">Cadastrar</a></li>
+						<li><a href="#situation">Situação</a></li>
+					</ul>
+					<!-- /. sub dropdown voo -->
+				</li>
+				<!-- /. dropdown voo -->
+
+				<!-- dropdown aeronave -->
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Aeronave<b class="caret"></b></a>
+					<!-- sub dropdown aeronave -->
+					<ul class="dropdown-menu">
+						<li><a href="#searchAircrafit">Consultar</a></li>
+						<li><a href="#aircrafit/insert">Cadastrar</a></li>
+					</ul>
+					<!-- /. sub dropdown aeronave -->
+				</li>
+				<!-- /. dropdown aeronave -->
+
+				<!-- passagens -->
+				<li>
+					<a href="#passage">Passagens</a>
+				</li>
+				<!-- /. passagens -->
+			</ul>
+	    </div>
+	    <!-- /. nav itens -->
+  </div>
+  <!-- container -->
+</div>
+<div class="clearfix"></div>
+
+<!-- breadcrumb -->
+<ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li class="active"><a href="#">{{sitemap}}</a></li>
+</ol>
+<!-- /. breadcump -->
+
+<!-- Container View ANGULAR JS -->
+<div class="container" ng-view>
+
+</div>
+<!-- /. Container View ANGULAR JS -->
+
+<script src="../assets/js/jquery-1.10.2.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/angular.min.js"></script>
+<script src="../assets/js/app.js"></script>
+
+<!-- controllers angular 
+<script src="../assets/js/controller/fly.js"></script>
+<script src="../assets/js/controller/searchFly.js"></script>
+-->
+</body>
+</html>
